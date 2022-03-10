@@ -5,6 +5,7 @@ If you need additional storage, you can attach a volume to a running instance, m
 Be aware that each user has 10 TB of storage by default.
 
 Guide:
+
 1. Go to Volumes/Volumes and then click "+ Create Volume". Give it a name to make it easier to locate and a size. Make sure to leave "Volume Source" and "Type" at their default values.
 2. Find the instance you wish to attach the newly created volume to under Compute/Instances and under "Actions" for the relevant instance (must be a running instance) select "Attach Volume". Select the volume you have just created.
 3. You should see a popup message with the name of new device, e.g. "/dev/vdb", "/dev/vdc" etc. You can also click on the instance name to to get info on e.g. the attached volumes and their naming.
