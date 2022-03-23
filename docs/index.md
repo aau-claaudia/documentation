@@ -53,10 +53,10 @@ In Strato, a range of different pre-built images will be available. For now, we 
 
 | Image Name                         |  Version                        | Use case                      |Guide|
 |    ---                             | ---                            | ---                           | --- |
-| Ubuntu 18.04 Bionic Beaver         | 18.04 LTS Cloud                | Base-ubuntu-image for the user to build upon.        | [**Ubuntu cloud**](image-guides/ubuntu.md) |
-| Ubuntu 20.04 Focal Fossa           | 20.04 LTS Cloud                | Base-ubuntu-image for the user to build upon.        | [**Ubuntu cloud**](image-guides/ubuntu.md) |
+| Ubuntu 18.04 Bionic Beaver         | 18.04 LTS Cloud                | Base-ubuntu-image for the user to build upon.        | [**Ubuntu cloud**](guides/Image-guides/ubuntu/ubuntu_18-04.md) |
+| Ubuntu 20.04 Focal Fossa           | 20.04 LTS Cloud                | Base-ubuntu-image for the user to build upon.        | [**Ubuntu cloud**](guides/Image-guides/ubuntu/ubuntu_20-04.md) |
 
-To get a GPU working using the flavor gpu.t4-large, you can follow [**this guide**](image-guides/ubuntu.md#installing-gpu-support)
+To get a GPU working using the flavor gpu.t4-large, you can follow [**this guide**](guides/Image-guides/ubuntu/ubuntu_20-04.md#installing-gpu-support)
 
 ## Custom images
 In addition to the pre-built Ubuntu images, we provide some instructions here for installing requested software in the pre-built images, until we can offer more pre-built images with that software installed.
