@@ -1,6 +1,6 @@
 # Ubuntu 18.04 LTS
 
-The default username is **ubuntu** for the Ubuntu 18.04 LTS image. Use a key-pair applied to the instance in the creation, (Unsure what this is, see [**Quick-start - Your first instance**](quick-start.md)) to access the instance you can use the default IP Adress (You dont need a floating-IP adress)
+The default username is **ubuntu** for the Ubuntu 18.04 LTS image. Use a key-pair applied to the instance in the creation, (Unsure what this is, see [**Quick-start - Your first instance**](../../quick-start.md)) to access the instance you can use the default IP Adress (You dont need a floating-IP adress)
 
 ``` bash
 ssh ubuntu@10.92.0.xx -i yourPersonalKey.pem
