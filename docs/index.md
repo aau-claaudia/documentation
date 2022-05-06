@@ -80,6 +80,13 @@ Learn about more advanced Openstack features E.g. deleting instances, releasing 
 - [**Running long simulations**](guides/openstack_guides/running_simulations.md)
 - [**Remote desktop using X2Go and Xfce**](guides/openstack_guides/remote_desktop_xfce.md)
 
+## Expectable Performance
+
+You may experience varying levels of computational performance from
+instances in Strato. You can read more details
+[here](guides/performance/performance.md) to help understand what you
+can expect if this is critical to your application.
+
 ## Discussion Forum
 
 To support as many as possible we have created a [Yammer Compute Cloud Group](https://www.yammer.com/aau.dk/#/threads/inGroup?type=in_group&feedId=10451402752&view=all). The Yammer Compute Cloud Group is a forum to ask questions and share tips/tricks. The idea is to answer questions once, but let everyone benefit from it.
