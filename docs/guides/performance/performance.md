@@ -14,9 +14,9 @@ total, it will not improve performance to use a flavor with more than
 
 Additional factors that influence computational performance:
 
-CPU architecture
-
-: Your software may be optimised to run faster on an Intel CPU than an
+- **CPU architecture**
+  
+  Your software may be optimised to run faster on an Intel CPU than an
   AMD CPU, or vice versa.
   
   The Strato platform consists of servers with Intel CPUs as well as
@@ -27,18 +27,18 @@ CPU architecture
   You can run the command ``lscpu`` in your instance to determine
   which type of CPU(s) your instance is running on.
 
-VCPUs are virtual CPUs
-
-: One VCPU in Strato does not necessarily correspond to one physical
+- **VCPUs are virtual CPUs**
+  
+  One VCPU in Strato does not necessarily correspond to one physical
   CPU core in a server.
   
   One VCPU may correspond to one "hardware thread" in the CPU and not
   one physical CPU core. Hardware threads are for example the parallel
   instruction pipelines in Intel's HyperThreading technology.
 
-VCPUs are over-provisioned
-
-: In addition to the above, VCPUs in Strato may be over-provisioned to
+- **VCPUs are over-provisioned**
+  
+  In addition to the above, VCPUs in Strato may be over-provisioned to
   some degree. This means that the computation time of a VCPU may be
   "time-shared" with other virtual machines in the same server. You
   may thus experience that a VCPU in your Strato instance is
@@ -49,9 +49,9 @@ VCPUs are over-provisioned
   to twice as slow as you would normally expect from the underlying
   physical CPU.
 
-Storage in Strato is network storage on rotating hard drives
-
-: The file storage available to Strato instances is provided through a
+- **Storage in Strato is network storage on rotating hard drives**
+  
+  The file storage available to Strato instances is provided through a
   network file system (Ceph) using rotating hard drives. Both the
   network and the hard drive technology impacts the file I/O
   performance you experience in Strato.
