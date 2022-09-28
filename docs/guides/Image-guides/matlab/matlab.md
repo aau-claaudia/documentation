@@ -1,9 +1,11 @@
 # Installing Matlab
 
-For this guide, you need an Ubuntu 18.04 or 20.04 instance in Strato
+For this guide, you need an Ubuntu 18.04, 20.04 or 22.04 instance in Strato
 as explained [here](ubuntu.md). Please make sure your instance is
 running and familiarise yourself with connecting to it before you
 follow this guide.
+
+If you are accessing your instance from a Windows computer, you might run into issues with launching the application as a graphical user interface. This is because we are relying XServer to launch Matlab as a graphical user interface, and this is not supported by the default Windows terminal. Instead you will need an application like: [MobaXterm](https://mobaxterm.mobatek.net/).
 
 The following steps explain how to install Matlab into a Strato
 instance and activate your license for it.
@@ -30,9 +32,11 @@ instance and activate your license for it.
     A concrete example could be:
     
     ```bash
-    scp -i yourPersonalKey.pem matlab_R2021b_glnxa64.zip ubuntu@10.92.0.113:/home/ubuntu
+    scp -i yourPersonalKey.pem matlab_R2022b_glnxa64.zip ubuntu@10.92.0.113:/home/ubuntu
     ```
     
+The following steps should be carried out on your Strato instance which you have to log in to using SSH.  
+
 3.  Log into your Strato instance using SSH:
     
     ```bash
@@ -40,13 +44,11 @@ instance and activate your license for it.
     ```	 
     You should now be able to see your uploaded MATLAB install file, if
     you type `ls` to view the contents of the current directory.
-    
-4.  The following steps should be carried out on your Strato instance
-    which you have just logged into using SSH.  
-    Install X:
+
+4.  Install X:
     
     ```bash
-    sudo apt install xorg
+    sudo apt update && sudo apt install xorg
     ```	 
     This can take quite some time.
     
@@ -65,7 +67,7 @@ instance and activate your license for it.
 7.  Uncompress the MATLAB installer:
     
     ```bash
-    unzip matlab_R2021b_glnxa64.zip -d matlab_install
+    unzip matlab_R2022b_glnxa64.zip -d matlab_install
     ```  
     *Note that the name of your MATLAB installer zip file may be
     different, if you downloaded a different version of MATLAB than in
