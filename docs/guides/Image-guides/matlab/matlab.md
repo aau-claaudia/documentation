@@ -5,7 +5,7 @@ as explained [here](ubuntu.md). Please make sure your instance is
 running and familiarise yourself with connecting to it before you
 follow this guide.
 
-If you are accessing your instance from a Windows computer, you might run into issues with launching the application as a graphical user interface. This is because we are relying XServer to launch Matlab as a graphical user interface, and this is not supported by the default Windows terminal. Instead you will need an application like: [MobaXterm](https://mobaxterm.mobatek.net/).
+If you are accessing your instance from a Windows computer, you might run into issues with following this guide using the default terminal. This is because we are relying on XServer to launch Matlab as a graphical user interface. You will thus need to use a terminal application that supports this like: [MobaXterm](https://mobaxterm.mobatek.net/).
 
 The following steps explain how to install Matlab into a Strato
 instance and activate your license for it.
