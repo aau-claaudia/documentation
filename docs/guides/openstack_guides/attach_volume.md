@@ -21,7 +21,11 @@ Guide:
    ```bash
    $ sudo mount /dev/vdb ~/vol1
    ```
-7. Verify that the volume has been mounted as expected:
+7. Change owner and group of directory to default user:
+   ```bash
+   $ sudo chown -R $USER:$USER ./test
+   ```
+9. Verify that the volume has been mounted as expected:
    ```bash
    $ df -h
    Filesystem      Size  Used Avail Use% Mounted on
