@@ -73,9 +73,17 @@ In the **launch instance** menu you can set settings for the instance. To launch
 
 The default way of accessing is via SSH. The default username is **ubuntu** for the Ubuntu 18.04 image we chose. Use the key-pair we generated earlier in the guide as following to access the instance.
 
-On mac/linux open the terminal on windows open PowerShell or Command Prompt
+On mac/linux open the terminal on windows open PowerShell or Command Prompt. Be aware that the `yourPersonalKey.pem` element of the address below needs to point to the correct file. I.e. the example below assumes that you are in the same folder as the file is when you run the command. If you have saved the file in another location, then you need to provide the correct path to the file.
+
 ```bash
 ssh ubuntu@10.92.0.zzz -i yourPersonalKey.pem
+```
+
+Alternative example, if you are in your `home` directory, and have saved `yourPersonalKey.pem` in a folder called "`.ssh`", then your command would look as follows
+
+
+```bash
+ssh ubuntu@10.92.0.zzz -i .ssh/yourPersonalKey.pem
 ```
 
 
@@ -90,10 +98,35 @@ Remember, you need to be on the AAU network using e.g. VPN. If you get a "Connec
 On some platforms/tools you might receive an error, saying that Permissions are too open. This can be adjusted with either setting the right permissions for the file or move the file to a specific folder.
 
 #### Mac/Linux
+For example, you may create a folder in your home directory called `.ssh` if it does not yet exist
+
 ```bash
-chmod 600 yourPublicKey.pem
+mkdir .ssh
 ```
-and then try to connect again.
+
+Move the file into the folder,
+
+```bash
+mv yourPersonalKey.pem .ssh/yourPersonalKey.pem
+```
+
+And then set the folder permissions,
+
+```bash
+chmod 700 .ssh
+```
+
+and the specific file permissions.
+
+```bash
+chmod 600 .ssh/yourPersonalKey.pem
+```
+and then try to connect.
+
+For example, from your home directory:
+```bash
+ssh ubuntu@10.92.0.zzz -i .ssh/yourPersonalKey.pem
+```
 
 #### Windows
 Move the SSH key to the ".ssh" folder located in the home directory, for example 'C:\User\adf\.ssh' to set the right permissioins
