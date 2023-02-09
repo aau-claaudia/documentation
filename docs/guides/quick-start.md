@@ -121,11 +121,7 @@ and the specific file permissions.
 ```bash
 chmod 600 .ssh/yourPersonalKey.pem
 ```
-
-```bash
-chmod 600 yourPublicKey.pem
-```
-and then try to connect again.
+and then try to connect.
 
 For example, from your home directory:
 ```bash
