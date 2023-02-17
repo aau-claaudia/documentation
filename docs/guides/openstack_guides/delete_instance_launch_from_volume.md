@@ -66,10 +66,10 @@ At present, creating a snapshot of a volume prevents the automatic deletion of t
 NOTE: Windows users may need to update PuTTy settings.
 
 ## Additional Benefits:
-•	This solves the current inability to resize an instance.
-•	Every time you need to make changes to the installation on the volume, you can spin up a machine that is the perfect size for the task.
-•	This mitigates the problems encountered when trying to shelve a GPU instance. (Launching a new instance from a volume does not require that the identical physical device is attached to the instance, as is the case when trying to shelve an instance).
-•	You will get an idea of how many volumes you have allocated to your user and can clean up your storage.
+*	This solves the current inability to resize an instance.
+*	Every time you need to make changes to the installation on the volume, you can spin up a machine that is the perfect size for the task.
+*	This mitigates the problems encountered when trying to shelve a GPU instance. (Launching a new instance from a volume does not require that the identical physical device is attached to the instance, as is the case when trying to shelve an instance).
+*	You will get an idea of how many volumes you have allocated to your user and can clean up your storage.
 
 ## Note on volume sizes
 Volumes can always be extended later (but not reduced in size) so any image or snapshot creation intended for sharing or as templates should be set to the minimum viable size.
