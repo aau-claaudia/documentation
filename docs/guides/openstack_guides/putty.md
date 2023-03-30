@@ -5,29 +5,19 @@ Some versions of Windows do not support OpenSSH out of the box. This means that 
 To convert your *.pem-key you must do the following:
 
 * Open "PuTTYgen" (e.g., from the Start menu, click All Programs > PuTTY > PuTTYgen).
-* Click "Load"  (as shown in the image below):
-
-![Alt Description](../../assets/img/openstack/puttykeygenerator.png? "Title")
-
-* Browse to the location of the private key file that you want to convert (e.g., MyPersonalKey.pem).
-
-Note: By default, PuTTYgen displays only files with extension .ppk. Make sure to enable show all files, so you can see your *.pem-file (as shown in the image). Also the private key file must end with a newline character or PuTTYgen cannot load it correctly.
-
-![Alt Description](../../assets/img/openstack/puttysavekey.png?raw=true "Title")
-
+* Click "Load"  (as shown in the image below):  
+  ![Alt Description](../../assets/img/openstack/puttykeygenerator.png? "Title")
+* Browse to the location of the private key file that you want to convert (e.g., MyPersonalKey.pem).  
+  Note: By default, PuTTYgen displays only files with extension .ppk. Make sure to enable show all files, so you can see your *.pem-file (as shown in the image). Also the private key file must end with a newline character or PuTTYgen cannot load it correctly.  
+  ![Alt Description](../../assets/img/openstack/puttysavekey.png?raw=true "Title")
 * Select your .pem key file and click Open.
-* If everything went well PuTTYgen displays the following message:
-
-![Alt Description](../../assets/img/openstack/puttygennotice.png?raw=true "Title")
-
+* If everything went well PuTTYgen displays the following message:  
+  ![Alt Description](../../assets/img/openstack/puttygennotice.png?raw=true "Title")
 * When you click OK, PuTTYgen displays a dialog box with information about the key you loaded, such as the public key and the fingerprint.
 * Optional: Enter and confirm a key passphrase (If you use a passphrase you will have to enter this passphrase whenever you authenticate with your key.)
-* Click Save private key to save the key in PuTTY's format.
-
-![Alt Description](../../assets/img/openstack/puttykeygeneratorwindow.png?raw=true "Title")
-
+* Click Save private key to save the key in PuTTY's format.  
+  ![Alt Description](../../assets/img/openstack/puttykeygeneratorwindow.png?raw=true "Title")
 * Save your yourPersonalKey.ppk file somewhere secure.
-
 
 
 ## Connect to instance
@@ -35,25 +25,18 @@ Now that you have converted your SSH-key from the *.pem*-format to the *.ppk*-fo
 
 1. Open PuTTY. 
 2. In the tree on the left find:  Connection > SSH > Auth > Credentials
-3. Click on the ‘Browse...’ button under Private key file for authentication:
-
-![Alt Description](../../assets/img/openstack/putty_key_auth.png?raw=true "Title")
-
-
-
+3. Click on the ‘Browse...’ button under Private key file for authentication:  
+   ![Alt Description](../../assets/img/openstack/putty_key_auth.png?raw=true "Title")
 4. Select the PPK-file (your private key) you just saved.
 5. Go in the tree on the left to ‘Session’
-6. Enter in the ‘Host Name (or IP address)’ field the username and floating IP address of the instance:
-![Alt Description](../../assets/img/openstack/putty_ubuntu.png?raw=true "Title")
+6. Enter in the ‘Host Name (or IP address)’ field the username and floating IP address of the instance:  
+   ![Alt Description](../../assets/img/openstack/putty_ubuntu.png?raw=true "Title")
 7. Optional: Enter a name for the session in the ‘Saved Sessions’ field and click save. This saves all the settings, including the private key for this session.
 8. Click Open to connect to the instance.
-9. When you connect for the first time you’ll be asked if you trust this computer. Normally you can click 'Yes'.
-
-![Alt Description](../../assets/img/openstack/putty_first.png?raw=true "Title")
-
-10.If you’re connecting to an instance with a floating IP that you used before you’ll get this warning message. If that’s the case, it’s safe to click Yes as well.
-![Alt Description](../../assets/img/openstack/putty_reuse.png?raw=true "Title")
-
+9. When you connect for the first time you’ll be asked if you trust this computer. Normally you can click 'Yes'.  
+   ![Alt Description](../../assets/img/openstack/putty_first.png?raw=true "Title")
+10. If you’re connecting to an instance with a floating IP that you used before you’ll get this warning message. If that’s the case, it’s safe to click Yes as well.  
+    ![Alt Description](../../assets/img/openstack/putty_reuse.png?raw=true "Title")
 11. If everything works alright you’re now logged in.
 
 ## Additional information
