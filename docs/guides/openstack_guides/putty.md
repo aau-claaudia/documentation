@@ -68,5 +68,5 @@ First, we need to convert yourPersonalKey.pem to the format used with Putty befo
 
 These steps forms a framework for other tools as well. If you like e.g. [FileZilla](https://filezilla-project.org/), locate how to use/add the pemision file "yourPersonalKey.pem", and connect with the SSH protocol.
 
-# X11 forwaring
+# X11 forwarding
 If you want to see GUIs using X11 forwarding, you can follow the guider [here](https://superuser.com/questions/119792/how-to-use-x11-forwarding-with-putty)

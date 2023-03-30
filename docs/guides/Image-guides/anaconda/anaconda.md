@@ -3,7 +3,7 @@
 We will install a version of Anaconda by downloading a specific version of Anaconda, install and add the binaries to the PATH:
 
 ```bash
-anacondaType=Anaconda3-2021.11-Linux-x86_64.sh
+anacondaType=Anaconda3-2022.10-Linux-x86_64.sh
 wget -q https://repo.anaconda.com/archive/$anacondaType
 chmod +x $anacondaType
 
