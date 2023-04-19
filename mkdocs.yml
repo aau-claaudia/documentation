@@ -1,8 +1,12 @@
 site_name: Strato Documentation
 nav:
   - Home: index.md
-  - "Quick start": guides/quick-start.md
-
+  - "Getting started":
+    - guides/getting_started/welcome.md
+    - "Launch instance": guides/getting_started/launch_instance.md
+    - "Access instance": guides/getting_started/access_instance.md
+    - "Transfer files": guides/getting_started/transfer_files.md
+    - "Shutting down": guides/getting_started/shutting_down.md
   - "Image Guides":
     - guides/Image-guides/index.md
     - "Ubuntu":
@@ -18,8 +22,6 @@ nav:
   - "OpenStack Guides":
     - guides/openstack_guides/index.md
     - "Copy data from the old strato to new strato": guides/openstack_guides/Move_To_strato.md
-    - "Connect to instance from Windows (using OpenSSH)": guides/openstack_guides/wcmd.md
-    - "Connect to instance from Windows (using PuTTY)": guides/openstack_guides/putty.md
     - "CLI": guides/openstack_guides/openstack_CLI.md
     - "Delete and restart an instance from the volume": guides/openstack_guides/delete_instance_launch_from_volume.md
     - "Stop, pause & delete instances": guides/openstack_guides/Pause_shutdown_delete_instances.md
