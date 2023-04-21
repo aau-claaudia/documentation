@@ -54,32 +54,32 @@ If you are a Windows user, we recommend you use [WinSCP](https://winscp.net/) to
 
 ![Logging in](../../assets/img/winscp/winscp1_login.png "Fill out the fields")
 
-* Choose SCP as the "File protocol"
+* Choose SCP as the **"File protocol"**
 
-* In the field "Host name" type in the IP-adress of your instance.
+* In the field **"Host name"** type in the IP-adress of your instance.
 
-* For the SSH-protocol the standard "Port number" is 22.
+* For the SSH-protocol the standard **"Port number"** is 22.
 
-* The field "User name" is a standard username that gets assigned to your instance. A list of standard usernames can be found here.   
-* By standard the field "Password" can be left empty.
+* The field **"User name"** is a standard username that gets assigned to your instance. A list of standard usernames can be found here.   
+* By standard the field **"Password"** can be left empty.
 
-* Then click the "Advanced Button", and you will be faced with this window:
+* Then click the **"Advanced Button"**, and you will be faced with this window:
 
 ![Advanced](../../assets/img/winscp/winscp2_ssh.png "Find SSH -> Authentication")
 
-* Navigate to * SSH -> Authentication * and browse to the location of your SSH-key. Select the key and press "Open". 
+* Navigate to *SSH -> Authentication* and browse to the location of your SSH-key. Select the key and press **"Open"**. 
 
 ![Advanced2](../../assets/img/winscp/winscp_allfiles.png "Locate your keyfile")
 
-* If you have navigated to the correct location and still can not see your SSH-key, please select "Show all files" as shown in the image above. Note that WinSCP only supports SSH-keys in the PuTTY-format (*.pkk*). If you have not already converted your key to this format, WinSCP will offer to do this for you, when you select the key in *.pem*-format.
+* If you have navigated to the correct location and still can not see your SSH-key, please select **"Show all files"** as shown in the image above. Note that WinSCP only supports SSH-keys in the PuTTY-format (*.pkk*). If you have not already converted your key to this format, WinSCP will offer to do this for you, when you select the key in *.pem*-format.
 
-* Press "Ok" in the "Advanced" window to apply these settings.
+* Press **"Ok"** in the "Advanced" window to apply these settings.
 
 * You should now be back at this window. Press login.
 
 ![Login2](../../assets/img/winscp/winscp_login2.png "Locate your keyfile")
 
-* The first time you login you will be welcomed by a warning message, asking wether you do in fact want to connect to this adress. If you can confirm this is what you are trying to do, you can press "Yes".
+* The first time you login you will be welcomed by a warning message, asking wether you do in fact want to connect to this adress. If you can confirm this is what you are trying to do, you can press **"Yes"**.
 
 ![Advanced2](../../assets/img/winscp/winscp_allfiles.png "Locate your keyfile")
 

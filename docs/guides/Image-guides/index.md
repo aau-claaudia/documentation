@@ -1,1 +1,5 @@
-Learn about more advanced OpenStack features E.g. deleting instances, releasing IPs or using the OpenStack CLI.
+# Application guides
+
+**This section is currently being restructured.** 
+
+Learn about specific applications for Strato.
