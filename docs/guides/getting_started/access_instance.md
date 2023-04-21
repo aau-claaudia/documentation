@@ -1,14 +1,14 @@
 All Strato instances are run on the AAU-network. Before you attempt to access your instance, please make sure that you are connected to the AAU-network - either by being physically on university grounds, being connected to the [**AAU VPN-service**](https://www.en.its.aau.dk/instructions/vpn) or establishing the connection through the [**SSH-gateway**](access_instance.md#connecting-via-aaus-ssh-gateway). 
 
-Strato requires your key file to be in the OpenSSH-format, and if you have managed to create the key pair [*according to our guide*](launch_instance.md#create-ssh-key-pair), it's safe to assume that you have OpenSSH installed on your machine. 
-
-The only difference is the terminal emulator, you will be working from on each of these systems. On Windows we recomend using 'Powershell' or 'MobaXterm'. Some users prefer to use PuTTY (link). On MacOS we recomend using 'Terminal' or 'iTerm2'. On Linux you can use whichever terminal emulator came with your distribution.
-
-## Access your instance
+Strato requires your key file to be in the OpenSSH-format, and if you have managed to create the key pair [*according to the previous section*](launch_instance.md#create-ssh-key-pair), it's safe to assume that you have OpenSSH installed on your machine. 
 
 The following will work on most modern computers, but for Windows users we specifically recomend using either Powershell (comes preinstalled on all Windows computers), [MobaXterm](https://mobaxterm.mobatek.net/) or [PuTTY](link). Do not rely on the console built in the OpenStack dashboard.
 
-Begin by opening the appropriate terminal application on your computer, and enter the following command:
+## Access your instance
+
+Open the appropriate terminal application for your system and enter the SSH command. 
+
+The command structure is:
 
 ```
 ssh -i ~/.ssh/<my_private_key> ubuntu@10.92.0.zzz
@@ -24,6 +24,7 @@ The command should look something like this:
 ```
 ssh -i ~/.ssh/my_ssh_key ubuntu@10.92.1.99
 ```
+
 <p style="font-weight: bold; font-size: 19px;">You should now have accessed your instance!</p> 
 
 ### Additional information

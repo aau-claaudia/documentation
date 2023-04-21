@@ -9,15 +9,11 @@ nav:
     - "Shutting down": guides/getting_started/shutting_down.md
   - "Image Guides":
     - guides/Image-guides/index.md
-    - "Ubuntu":
-      - "Ubuntu 18.04": guides/Image-guides/ubuntu/ubuntu_18-04.md
-      - "Ubuntu 20.04": guides/Image-guides/ubuntu/ubuntu_20-04.md
-    - "Matlab":
-      - "Matlab 2019b": guides/Image-guides/matlab/matlab.md
-    - "Anaconda":
-      - "Anaconda3": guides/Image-guides/anaconda/anaconda.md
-    - "The littlest jupyterhub":
-      - "The littlest jupyterhub": guides/Image-guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
+    - "Ubuntu 18.04": guides/Image-guides/ubuntu/ubuntu_18-04.md
+    - "Ubuntu 20.04": guides/Image-guides/ubuntu/ubuntu_20-04.md
+    - "Matlab": guides/Image-guides/matlab/matlab.md
+    - "Anaconda": guides/Image-guides/anaconda/anaconda.md
+    - "The littlest jupyterhub": guides/Image-guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
 
   - "OpenStack Guides":
     - guides/openstack_guides/index.md
