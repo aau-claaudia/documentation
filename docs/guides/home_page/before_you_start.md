@@ -1,4 +1,4 @@
-## Best practices on Strato
+## Before you get started on Strato
 
 There are a multitude of ways to work with virtual machines on Strato, but there is one general process that we require users to follow.
 

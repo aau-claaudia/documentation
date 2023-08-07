@@ -1,5 +1,11 @@
 # Delete and restart an instance from the volume
 
+This is essentially a 3 step process.
+
+1. Rename the volume attached to your instance / server.
+2. Delete your instance
+3. Start a new instance and choose a volume rather than an image as the "Source".
+
 ## Method 1: How to Shut off, delete and reinstate an instance from a volume
 
 ### Preparation and deletion of an instance
