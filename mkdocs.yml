@@ -1,36 +1,47 @@
 site_name: Strato Documentation
 nav:
-  - Home: index.md
+  - "Home": 
+    - index.md
+    - "Introduction": guides/home_page/introduction.md
+#    - "Skills needed": guides/home_page/skills_needed.md
+#    - "Best practices": guides/home_page/best_practice.md
+#    - "Technical details": guides/home_page/technical_details.md
   - "Getting started":
     - guides/getting_started/welcome.md
     - "Launch instance": guides/getting_started/launch_instance.md
     - "Access instance": guides/getting_started/access_instance.md
     - "Transfer files": guides/getting_started/transfer_files.md
     - "Shutting down": guides/getting_started/shutting_down.md
-  - "Image Guides":
-    - guides/Image-guides/index.md
-    - "Ubuntu 18.04": guides/Image-guides/ubuntu/ubuntu_18-04.md
-    - "Ubuntu 20.04": guides/Image-guides/ubuntu/ubuntu_20-04.md
-    - "Matlab": guides/Image-guides/matlab/matlab.md
-    - "Anaconda": guides/Image-guides/anaconda/anaconda.md
-    - "The littlest jupyterhub": guides/Image-guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
+  - "Application guides":
+    - guides/application_guides/index.md
+#    - "Ubuntu 18.04": guides/application_guides/ubuntu/ubuntu_18-04.md
+#    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
+    - "Matlab": guides/application_guides/matlab/matlab.md
+    - "Anaconda": guides/application_guides/anaconda/anaconda.md
+    - "The littlest jupyterhub": guides/application_guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
+  - "Best-practice guides":
+    - guides/best_practice_guides/index.md
+    - "Delete and restart an instance from the volume": guides/best_practice_guides/delete_instance_launch_from_volume.md
+    - "Stop, pause & delete instances": guides/best_practice_guides/Pause_shutdown_delete_instances.md
+    - "Create smaller volumes": guides/best_practice_guides/diffrent_volume_size.md
+  - "Advanced guides":
+    - guides/advanced_guides/index.md
+    - "CLI": guides/advanced_guides/openstack_CLI.md
+    - "Custom security groups": guides/advanced_guides/Access_to_instance.md
+    - "Attaching a volume for additional storage": guides/advanced_guides/attach_volume.md
+    - "Persistent terminal sessions": guides/advanced_guides/running_simulations.md
+  - "FAQ":
+    - guides/faq/index.md
+    - "Cloud glossary": guides/faq/cloud_glossary.md
 
-  - "OpenStack Guides":
-    - guides/openstack_guides/index.md
-    - "Copy data from the old strato to new strato": guides/openstack_guides/Move_To_strato.md
-    - "CLI": guides/openstack_guides/openstack_CLI.md
-    - "Delete and restart an instance from the volume": guides/openstack_guides/delete_instance_launch_from_volume.md
-    - "Stop, pause & delete instances": guides/openstack_guides/Pause_shutdown_delete_instances.md
-    - "Custom volume size": guides/openstack_guides/diffrent_volume_size.md
-    - "Custom security groups": guides/openstack_guides/Access_to_instance.md
-    - "Save instances as image": guides/openstack_guides/save_image.md
-    - "Attaching a volume for additional storage": guides/openstack_guides/attach_volume.md
-    - "Resizing an instance": guides/openstack_guides/resize.md
-    - "Running long simulations": guides/openstack_guides/running_simulations.md
-    - "Remote desktop using X2Go and Xfce": guides/openstack_guides/remote_desktop_xfce.md
 
-  - "Cloud glossary": cloud_glossary.md
-  - About: about.md
+# TO BE DETERMINED
+#    - "Save instances as image": guides/advanced_guides/save_image.md
+#    - "Resizing an instance": guides/advanced_guides/resize.md
+#    - "Remote desktop using X2Go and Xfce": guides/advanced_guides/remote_desktop_xfce.md
+
+# ADDITIONAL PAGE SECTIONS FOR FUTURE EDITIONS
+#  - "Research examples":
 
 theme:
   name: material
