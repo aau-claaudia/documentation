@@ -19,6 +19,7 @@ nav:
     - "Matlab": guides/application_guides/matlab/matlab.md
     - "Anaconda": guides/application_guides/anaconda/anaconda.md
     - "The littlest jupyterhub": guides/application_guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
+    - "QGIS": guides/application_guides/qgis/qgis.md
   - "Best-practice guides":
     - guides/best_practice_guides/index.md
     - "Delete and restart an instance from the volume": guides/best_practice_guides/delete_instance_launch_from_volume.md
@@ -91,14 +92,14 @@ extra:
       name: Claaudia on Twitter
 
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<claaudia@aau.dk>
+      link: mailto:<support@its.aau.dk>
 
     - icon: fontawesome/solid/globe
-      link: https://www.claaudia.aau.dk/
+      link: https://www.researcher.aau.dk/
 
   #generator: True
 
-copyright: Copyright &copy; 2021 - 2022 Claaudia
+copyright: Copyright &copy; 2021 - 2023 Claaudia
 
 
 #extra_javascript:
