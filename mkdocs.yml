@@ -21,7 +21,6 @@ nav:
     - "Anaconda": guides/application_guides/anaconda/anaconda.md
     - "The littlest jupyterhub": guides/application_guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
     - "QGIS": guides/application_guides/qgis/qgis.md
-    - "RStudio": guides/application_guides/rstudio/rstudio.md
   - "Best-practice guides":
     - guides/best_practice_guides/index.md
     - "Delete and restart an instance from the volume": guides/best_practice_guides/delete_instance_launch_from_volume.md
