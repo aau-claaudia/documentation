@@ -14,6 +14,7 @@ nav:
     - "Shutting down": guides/getting_started/shutting_down.md
   - "Application guides":
     - guides/application_guides/index.md
+    - "Graphical User Interfaces": guides/application_guides/gui/gui.md
 #    - "Ubuntu 18.04": guides/application_guides/ubuntu/ubuntu_18-04.md
 #    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
     - "Matlab": guides/application_guides/matlab/matlab.md
