@@ -1,6 +1,6 @@
 # QGIS
 
-QGIS is a free and open source geographic information system (GIS) used for working geospatial data. In the following sections we will demonstrate how to setup QGIS on your Strato instance. As this is an application that relies heavily on having a graphical user interface (GUI), we will be using a technology called "X11 Forwarding" to receive the graphics signal from the Strato instance and display them on your local machine. Please read through the section on [**Graphical User Interfaces**](url) to ensure that your local computer is set up for this.
+QGIS is a free and open source geographic information system (GIS) used for working geospatial data. In the following sections we will demonstrate how to setup QGIS on your Strato instance. As this is an application that relies heavily on having a graphical user interface (GUI), we will be using a technology called "X11 Forwarding" to receive the graphics signal from the Strato instance and display them on your local machine. Please read through the section on [Graphical User Interfaces](../gui/gui.md) to ensure that your local computer is set up for this.
 
 In the following we will be demonstrating two ways of installing QGIS:
 
@@ -55,8 +55,7 @@ qgis
 
 ## Install using Conda
 
-Some users may need to have different versions of QGIS for different research projects. Conda offers a very elegant solution for this.
-Please refer to our section on [**Anaconda**](../anaconda/anaconda.md) to learn more about conda.
+Some users may need to have specific versions of QGIS (or several different versions). Conda offers a very elegant solution for managing different software environements. Conda is available as a prebuilt image in the OpenStack dashboard (see the section [Launch Instance]('../../getting_started/launch_instance.md') to learn more). Otherwise you should follow [the official instructions for installing Conda/Miniconda](https://docs.conda.io/projects/miniconda/en/latest/#quick-command-line-install).
 
 Create a conda environment - here we will call it *my_gis_project* - feel free to choose another name:
 ```

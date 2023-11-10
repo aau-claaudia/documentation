@@ -18,8 +18,7 @@ nav:
 #    - "Ubuntu 18.04": guides/application_guides/ubuntu/ubuntu_18-04.md
 #    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
     - "Matlab": guides/application_guides/matlab/matlab.md
-    - "Anaconda": guides/application_guides/anaconda/anaconda.md
-    - "The littlest jupyterhub": guides/application_guides/the-littlest-jupyterhub/the-littlest-jupyterhub.md
+    - "Jupyter Notebook": ./guides/application_guides/jupyter/jupyter.md
     - "QGIS": guides/application_guides/qgis/qgis.md
   - "Best-practice guides":
     - guides/best_practice_guides/index.md
