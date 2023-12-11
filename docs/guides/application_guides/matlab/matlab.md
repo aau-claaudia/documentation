@@ -1,89 +1,73 @@
-# Installing Matlab
+# Matlab
 
-For this guide, you need an Ubuntu 18.04, 20.04 or 22.04 instance in Strato
-as explained [here](ubuntu.md). Please make sure your instance is
-running and familiarise yourself with connecting to it before you
-follow this guide.
+There are two ways in which you can work with Matlab on Strato instances.
 
-If you are accessing your instance from a Windows computer, you might run into issues with following this guide using the default terminal. This is because we are relying on XServer to launch Matlab as a graphical user interface. You will thus need to use a terminal application that supports this like: [MobaXterm](https://mobaxterm.mobatek.net/).
+1. **Run with graphical user interface (GUI):** Here the application runs on your Strato instance, but it's graphics are rendered on your local computer. This is useful for interactive development, ie. workflows where you will need to test and modify your code continuously. Make sure to prepare your local computer accordingly, by following our section on [Graphical User Interfaces]("../gui/gui.md"). 
+2. **Run the application in headless mode:** By default Strato instances do not come with any graphical user interfaces, but are operated in headless mode. In cases where you simply need to execute a prewritten script, this approach might be preferable.
 
-The following steps explain how to install Matlab into a Strato
-instance and activate your license for it.
+**Bonus tip:** Matlab is also available on [DeiC Interactive HPC]("https://cloud.sdu.dk/") (UCloud) which ships with a GUI out of the box. Read more about this possibility in [the official platform documentation]("https://docs.cloud.sdu.dk/Apps/matlab.html#connect-to-a-network-license").
 
-1.  Visit [ITS' MATLAB license
-    information](https://www.ekstranet.its.aau.dk/software/mathworks). Follow
-    the instructions under "Download MathWorks" and find the license
-    key under "Licens". The latter is in Danish; if you are a student,
-    use "Licensefil for STUDERENDE". If you are employed (including PhD
-    student), use "Licensefil for ANSATTE".  
-    Follow the information shown there to download the MATLAB
-    installer. On MathWorks' download page, select "Download for Linux"
-    (remember to change this option if it says for example "Download
-    for MacOS"). Save the downloaded file to your local computer and
-    note where you save it.
-    
-2.  Copy the downloaded file (probably called
-    "matlab\_R2021b\_glnxa64.zip") to your Strato instance.  
-    This can be done from the command line (in Linux, MacOS, or Windows). Use the same identity file for logging in as described for SSH access in the [Quick Start guide](../quick-start.md)):
-    	
-    ```bash
-    scp -i [path your identity file] [path to your downloaded file] ubuntu@[IP address of your Strato instance]:/home/ubuntu
-    ```
-    A concrete example could be:
-    
-    ```bash
-    scp -i yourPersonalKey.pem matlab_R2022b_glnxa64.zip ubuntu@10.92.0.113:/home/ubuntu
-    ```
-    
-The following steps should be carried out on your Strato instance which you have to log in to using SSH.  
 
-3.  Log into your Strato instance using SSH:
-    
-    ```bash
-    ssh -X -i [your identity file] ubuntu@[IP address of your Strato instance]
-    ```	 
-    You should now be able to see your uploaded MATLAB install file, if
-    you type `ls` to view the contents of the current directory.
+##  Installing Matlab
 
-4.  Install X:
-    
-    ```bash
-    sudo apt update && sudo apt install xorg
-    ```	 
-    This can take quite some time.
-    
-5.  Enable X forwarding for the root user:
-    
-    ```bash
-    sudo cp ~/.Xauthority ~root/.Xauthority
-    ```
-    
-6.  Install the `unzip` command in your instance:
-    
-    ```bash
-    sudo apt install unzip
-    ```
-    
-7.  Uncompress the MATLAB installer:
-    
-    ```bash
-    unzip matlab_R2022b_glnxa64.zip -d matlab_install
-    ```  
-    *Note that the name of your MATLAB installer zip file may be
-    different, if you downloaded a different version of MATLAB than in
-    this example.*
-    
-8.  Run the MATLAB installer:
-    
-    ```bash
-    sudo matlab_install/install
-    ```
-    
-9.  Follow the instructions in the installer to log into your MathWorks
-    account and activate your license obtained in step 1.  
-    You can also select which MATLAB toolboxes you wish to install.  
-    Select the default path for installing MATLAB and in the final
-    step, select "Begin Install".
-    
-10. You should now be able to run MATLAB from the command line by
-    typing `matlab`.
+
+Begin by updating the APT packaging index, so we have an updated list of sources to download applications from:
+
+```
+sudo apt update
+```
+
+Before going further, we will need to install an unzip tool and some additional libraries recommended by Mathworks.
+```
+sudo apt install unzip libx11-dev xorg-dev
+```
+
+Download the Matlab Package Manager (MPM) from Mathworks and make it executable:
+```
+sudo wget -P /usr/local/bin/ https://www.mathworks.com/mpm/glnxa64/mpm && sudo chmod +x /usr/local/bin/mpm
+```
+
+Now install Matlab using MPM. Note that here we are installing a version from late 2023. You can check [Mathworks website]("https://se.mathworks.com/help/matlab/release-notes.html") to see if there is a newer release.
+```
+mpm install MATLAB --release=R2023b --destination=~/matlab/
+```
+
+As we want to be able to launch matlab, when we type `matlab` - we will need to add the directory of the matlab executable to our `PATH` variable. We do this and restart our shell:
+```
+echo "export PATH=~/matlab/bin:$PATH" >> .bashrc && exec $SHELL
+```
+
+## Registering 
+Matlab is licensed software, and we will therefore need to register the applicaiton, before we can start using it. Note that this process may run very slowly, and therefore it is advisable to have some patience with this step.
+
+* Run the command `activate_matlab.sh`. This will launch a "Software Activation" window.
+* Choose: "Activate automatically using the Internet"
+* In your internet browser go to: [mathworks.com/mwa/otp]("https://mathworks.com/mwa/otp")
+* Enter your AAU email and get the one time password (OTP).
+    * Note that there is no need to sign up with Mathworks for this process.Mathworks will generate an OTP based on the domain of the email adress.
+* Head back to the Activation window we had open earlier.
+* Enter your AAU email adress and the OTP you retrieved from the [Mathworks OTP site]("https://mathworks.com/mwa/otp")
+* Click "Next".
+* Select the appropriate license
+    * Students should select "Student license" and Employees "Campus license".
+* Complete this process by pressing "Next".
+* You will be asked to send you information to Mathworks. Press "Confirm".
+ 
+## Run with GUI
+
+This will launch the familiar Matlab application window (provided that you have followed our section on [setting up Graphical User Interfaces]("https://se.mathworks.com/help/matlab/ref/commandwindow.html")).
+```
+matlab -desktop
+```
+
+## Run in headless mode
+If you wanted to run prepared script called `my_script.m`, you would run:
+
+```
+matlab -batch my_script
+```
+
+If you would want to enter the Matlab console to execute individual statements:
+```
+matlab -nodisplay
+```
