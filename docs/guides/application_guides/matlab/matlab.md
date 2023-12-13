@@ -2,7 +2,7 @@
 
 There are two ways in which you can work with Matlab on Strato instances.
 
-1. **Run with graphical user interface (GUI):** Here the application runs on your Strato instance, but it's graphics are rendered on your local computer. This is useful for interactive development, ie. workflows where you will need to test and modify your code continuously. Make sure to prepare your local computer accordingly, by following our section on [Graphical User Interfaces]("../gui/gui.md"). 
+1. **Run with graphical user interface (GUI):** Here the application runs on your Strato instance, but its graphics are rendered on your local computer. This is useful for interactive development, ie. workflows where you will need to test and modify your code continuously. Make sure to prepare your local computer accordingly, by following our section on [Graphical User Interfaces]("../gui/gui.md"). 
 2. **Run the application in headless mode:** By default Strato instances do not come with any graphical user interfaces, but are operated in headless mode. In cases where you simply need to execute a prewritten script, this approach might be preferable.
 
 **Bonus tip:** Matlab is also available on [DeiC Interactive HPC]("https://cloud.sdu.dk/") (UCloud) which ships with a GUI out of the box. Read more about this possibility in [the official platform documentation]("https://docs.cloud.sdu.dk/Apps/matlab.html#connect-to-a-network-license").
@@ -61,10 +61,10 @@ matlab -desktop
 ```
 
 ## Run in headless mode
-If you wanted to run prepared script called `my_script.m`, you would run:
+If you wanted to run prepared script called `your_script.m`, you would run:
 
 ```
-matlab -batch my_script
+matlab -nodisplay -batch your_script.m
 ```
 
 If you would want to enter the Matlab console to execute individual statements:

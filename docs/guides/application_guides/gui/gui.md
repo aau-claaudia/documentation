@@ -10,7 +10,7 @@ Setup will vary based on your operating system.
 
 ### Windows
 
-One way of doing this is to use [**MobaXterm**](https://mobaxterm.mobatek.net/) to connect to your instance, and to add an additional `-X` to your SSH-command, eg.:
+We recommend using [**MobaXterm**](https://mobaxterm.mobatek.net/) to connect to your instance, and that you add an additional `-X` to your SSH-command, eg.:
 
 ```
 ssh -i ~/.ssh/<my_private_key> -X ubuntu@10.92.0.zzz
@@ -19,8 +19,11 @@ You should then be able to launch the application by typing the name of the appl
 
 ### MacOS
 
-Coming ...
+Go to 
 
 ### Linux
 
-On Linux this will work without additional work as most Linux distributions use Xorg as their display server (at least as of writing this).
+As of writing this (late 2023) [Xorg]("https://en.wikipedia.org/wiki/X.Org_Server") is still the dominant display server on most Linux distribution. It is however expected that many distributions will switch over to [Wayland]("https://en.wikipedia.org/wiki/Wayland_(protocol)") in the near future. 
+You can check which server you are running with the command: `echo $XDG_SESSION_TYPE`.
+If this command outputs `wayland`, you might consider switching over to X11 (which also provides you with additional backwards compatibility). To do this you will need to run `sudo nano /etc/gdm3/custom.conf` and uncomment the line where it says `WaylandEnable=false`. Don't forget to restart the gnome display manager to effectuate the changes with: `sudo systemctl restart gdm3` 
+Because this change is still not implemented, we will refrain from providing detailed guides on this. The [Waypie]("https://gitlab.freedesktop.org/mstoeckl/waypipe") project might be able to provide a solution.
