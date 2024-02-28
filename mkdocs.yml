@@ -3,6 +3,7 @@ nav:
   - "Home": 
     - index.md
     - "Introduction": guides/home_page/introduction.md
+      # These have been taken out (they are old intro pages):
 #    - "Skills needed": guides/home_page/skills_needed.md
 #    - "Best practices": guides/home_page/best_practice.md
 #    - "Technical details": guides/home_page/technical_details.md
@@ -13,13 +14,14 @@ nav:
     - "Transfer files": guides/getting_started/transfer_files.md
     - "Shutting down": guides/getting_started/shutting_down.md
   - "Application guides":
-    - guides/application_guides/index.md
+    - guides/application_guides/about_applications.md
     - "Graphical User Interfaces": guides/application_guides/gui/gui.md
-#    - "Ubuntu 18.04": guides/application_guides/ubuntu/ubuntu_18-04.md
-#    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
     - "Matlab": guides/application_guides/matlab/matlab.md
     - "Jupyter Notebook": ./guides/application_guides/jupyter/jupyter.md
-    #- "QGIS": guides/application_guides/qgis.md # NEEDS REWORK
+      # These have been taken out:
+#    - "Ubuntu 18.04": guides/application_guides/ubuntu/ubuntu_18-04.md
+#    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
+#    - "QGIS": guides/application_guides/qgis.md # NEEDS REWORK
   - "Best-practice guides":
     - guides/best_practice_guides/index.md
     - "Delete and restart an instance from the volume": guides/best_practice_guides/delete_instance_launch_from_volume.md
@@ -34,7 +36,6 @@ nav:
   - "FAQ":
     - guides/faq/index.md
     - "Cloud glossary": guides/faq/cloud_glossary.md
-
 
 # TO BE DETERMINED
 #    - "Save instances as image": guides/advanced_guides/save_image.md
@@ -99,7 +100,7 @@ extra:
 
   #generator: True
 
-copyright: Copyright &copy; 2021 - 2023 Claaudia
+copyright: Copyright &copy; 2021 - 2024 Claaudia
 
 
 #extra_javascript:
