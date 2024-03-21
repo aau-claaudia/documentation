@@ -1,4 +1,4 @@
-The following will guide you trough installing docker on your Strato instance.
+The following will guide you trough installing Docker on your Strato instance.
 
 1. Fetch the appropriate GPG key, to verify the integrity of the software
 ```
@@ -12,11 +12,11 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 ```
 sudo apt update
 ```
-4. Install Docker CE (community edition), Docker CE CLI (Command line interface) and containerd.io (a container runtime dependency).
+4. Install Docker CE (Community Edition), Docker CE CLI (Command Line Interface) and containerd.io (a container runtime dependency).
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
-5. Verify that docker is unning
+5. Verify that Docker is running
 ```
 sudo systemctl --no-pager status docker
 ```
