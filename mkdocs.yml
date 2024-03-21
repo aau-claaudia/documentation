@@ -18,6 +18,7 @@ nav:
     - "Graphical User Interfaces": guides/application_guides/gui/gui.md
     - "Matlab": guides/application_guides/matlab/matlab.md
     - "Jupyter Notebook": ./guides/application_guides/jupyter/jupyter.md
+    - "Docker": ./guides/application_guides/docker/docker.md
       # These have been taken out:
 #    - "Ubuntu 18.04": guides/application_guides/ubuntu/ubuntu_18-04.md
 #    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
