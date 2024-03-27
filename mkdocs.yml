@@ -15,7 +15,6 @@ nav:
     - "Shutting down": guides/getting_started/shutting_down.md
   - "Application guides":
     - guides/application_guides/about_applications.md
-    - "Graphical User Interfaces": guides/application_guides/gui/gui.md
     - "Matlab": guides/application_guides/matlab/matlab.md
     - "Jupyter Notebook": ./guides/application_guides/jupyter/jupyter.md
     - "Docker": ./guides/application_guides/docker/docker.md
