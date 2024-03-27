@@ -2,7 +2,8 @@
 
 In the following we will be guiding you throught the process of installing Matlab on a Strato Instance.
 
-Matlab is also available on [DeiC Interactive HPC]("https://cloud.sdu.dk/") (also known as UCloud). This requires no setup and ships with a GUI out of the box. Read more about this possibility in [the official platform documentation]("https://docs.cloud.sdu.dk/Apps/matlab.html").
+!!! Tip
+    Matlab is also available on [DeiC Interactive HPC]("https://cloud.sdu.dk/") (also known as UCloud). This requires no setup and ships with a GUI out of the box. Read more about this possibility in [the official platform documentation]("https://docs.cloud.sdu.dk/Apps/matlab.html").
 
 ##  Installing Matlab
 
@@ -33,7 +34,7 @@ mpm install --release=R2023b --destination=$HOME/matlab --products Signal_Proces
 
 As we want to be able to launch matlab, when we type `matlab` - we will need to add the directory of the matlab executable to our `PATH` variable. We do this and restart our shell:
 ```
-echo "export PATH=$PATH:$HOME/matlab/bin" >> .bashrc && exec $SHELL
+echo "export PATH=$HOME/matlab/bin:$PATH" >> .bashrc && exec $SHELL
 ```
 
 ## Running Matlab
