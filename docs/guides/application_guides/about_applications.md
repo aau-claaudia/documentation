@@ -1,12 +1,13 @@
 # Strato Applications
 
-## Command Line Interfaces
 All Strato instances are essentially Linux computers with [headless interfaces](https://en.wikipedia.org/wiki/Headless_computer). They are in many ways very similar to regular desktop computers as they have a file system, network and computing capability, and they can run virtually any application - provided it can run on Linux. This is the most efficient way of distributing computing ressources and should be sufficient in most cases.
+
+## Command Line Interfaces
 
 For many users, operating a computer from the command line will be a new experience. At first they may not know what to do with it. and they may be tempted to install applications, that more or less turn their instance into a remote desktop. Although this may be possible, it might not necessarily be a good idea. Installing desktop capabilities will require a large number additional libraries to be installed, whereby critical system libraries are replaced, leaving you with a very non-standard instance that may be prone to errors, is difficult to troubleshoot and potentially has security risks.
 
 !!! Tip
-    A great way to learn how to use the Linux shell is to look at [linuxjourney.com](https://linuxjourney.com/lesson/the-shell)
+    A great ressource for learning how to use the Linux command line is: [linuxjourney.com](https://linuxjourney.com/lesson/the-shell)
 
 
 ## Graphical User Interfaces
