@@ -24,12 +24,12 @@ sudo wget -P /usr/local/bin/ https://www.mathworks.com/mpm/glnxa64/mpm && sudo c
 
 Now install Matlab using MPM. Note that here we are installing a version from late 2023. You can check [Mathworks website]("https://se.mathworks.com/help/matlab/release-notes.html") to see if there is a newer release.
 ```
-mpm install MATLAB --release=R2023b --destination=$HOME/matlab/
+mpm install MATLAB --release=R2024a --destination=$HOME/matlab/
 ```
 
 Additional matlab toolboxes can be installed in the following manner:
 ```
-mpm install --release=R2023b --destination=$HOME/matlab --products Signal_Processing_Toolbox Communications_Toolbox
+mpm install --release=R2024a --destination=$HOME/matlab --products Signal_Processing_Toolbox Communications_Toolbox
 ```
 
 As we want to be able to launch matlab, when we type `matlab` - we will need to add the directory of the matlab executable to our `PATH` variable. We do this and restart our shell:
