@@ -31,11 +31,21 @@ Additional matlab toolboxes can be installed in the following manner:
 ```
 mpm install --release=R2024a --destination=$HOME/matlab --products Signal_Processing_Toolbox Communications_Toolbox
 ```
+For a full list of available toolboxes check out [mpm's documentation for input files](https://github.com/mathworks-ref-arch/matlab-dockerfile/tree/main/mpm-input-files).
+If you cannot find a toolbox you need, it might be unavailable for the Matlab release and/or platform, read about [mpm's limitations](https://github.com/mathworks-ref-arch/matlab-dockerfile/blob/main/MPM.md#limitations).
 
 As we want to be able to launch matlab, when we type `matlab` - we will need to add the directory of the matlab executable to our `PATH` variable. We do this and restart our shell:
 ```
 echo "export PATH=$HOME/matlab/bin:$PATH" >> .bashrc && exec $SHELL
 ```
+
+## Activating Matlab
+Matlab needs an active licence to run. Before starting the activation process, open your local browser and visit [MathWorks to acquire a one-time password](https://mathworks.com/mwa/otp).
+```
+bash $HOME/matlab/bin/activate_matlab.sh
+```
+Choose "Activate automatically using the Internet" then "Log in to my MathWorks Account" with your AAU e-mail and the one-time password to proceed with activation. Select the appropriate license for you (student or employee), finally confirm the information and finish the activation process.
+
 
 ## Running Matlab
 
