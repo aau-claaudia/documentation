@@ -23,10 +23,11 @@ nav:
 #    - "Ubuntu 20.04": guides/application_guides/ubuntu/ubuntu_20-04.md
 #    - "QGIS": guides/application_guides/qgis.md # NEEDS REWORK
   - "Best-practice guides":
-    - guides/best_practice_guides/index.md
+    - "Best-practice guides": guides/best_practice_guides/index.md
     - "Delete and restart an instance from the volume": guides/best_practice_guides/delete_instance_launch_from_volume.md
     - "Stop, pause & delete instances": guides/best_practice_guides/Pause_shutdown_delete_instances.md
     - "Create smaller volumes": guides/best_practice_guides/diffrent_volume_size.md
+    - "How to Minimize the Risk of Malware": guides/best_practice_guides/How_to_avoid_malware.md
   - "Advanced guides":
     - guides/advanced_guides/index.md
     - "CLI": guides/advanced_guides/openstack_CLI.md
